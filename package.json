@@ -2,7 +2,7 @@
   "name": "test-sass",
   "version": "0.0.0",
   "description": "Aptitude test the tests a candidates ability to implement CSS via Sass in an effective an scalable manner",
-  "main": "index.html",
+  "main": "public/index.html",
   "scripts": {
     "start": "npm run serve",
     "build": "react-scripts build",
