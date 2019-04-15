@@ -8,8 +8,8 @@
     "build": "react-scripts build",
     "test": "test",
     "eject": "react-scripts eject",
-    "serve": "node server/index.js",
-    "style": "sass styles/index.scss index.css --no-source-map",
+    "serve": "node src/server/index.js",
+    "style": "sass src/styles/index.scss public/index.css --no-source-map",
     "style:watch": "npm run style -- --watch"
   },
   "repository": {

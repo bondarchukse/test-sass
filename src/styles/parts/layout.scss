@@ -1,0 +1,23 @@
+@import "../variables";
+
+.app {
+
+  &__header {
+    display: flex;
+    width: 100%;
+    border-bottom: $header-border;
+  }
+
+  &__container {
+    display: flex;
+  }
+
+  &__aside {
+    width: $aside-width;
+    padding-top: $aside-padding-top;
+  }
+
+  &__content {
+    padding: $content-padding;
+  }
+}

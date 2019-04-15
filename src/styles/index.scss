@@ -1,3 +1,6 @@
+@import "./variables.scss";
+@import "./fonts.scss";
+
 body,
 html {
   margin: 0;
@@ -6,6 +9,15 @@ html {
   height: 100%;
 }
 
-body {
-  background-color: red;
+html {
+  font-size: $html-font-size;
 }
+
+body {
+  @extend %font-family;
+  @extend %font-text;
+  background-color: $background-color-base;
+  color: $color-text;
+}
+
+@import "./parts/index.scss";

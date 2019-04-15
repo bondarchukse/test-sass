@@ -1,0 +1,47 @@
+@import "variables";
+
+@mixin transition-base($property: all) {
+  transition: $property 0.2s ease-in-out;
+}
+
+
+@mixin active-element() {
+  &:active,
+  &:focus,
+  &:hover {
+    @content;
+  }
+}
+
+
+@mixin active-color($property, $base-color, $selector: "") {
+
+  @if ($selector != "") {
+    #{$selector} {
+      #{$property}: $base-color;
+      @include transition-base($property);
+    }
+
+    @include active-element {
+      #{$selector} {
+        #{$property}: lighten($base-color, 15%);
+      }
+    }
+
+  } @else {
+    #{$property}: $base-color;
+    @include transition-base($property);
+    @include active-element {
+      #{$property}: lighten($base-color, 15%);
+    }
+  }
+}
+
+
+@mixin triangle($size: 1rem, $color: $color-primary) {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: $size $size 0 $size;
+  border-color: $color-primary transparent transparent transparent;
+}

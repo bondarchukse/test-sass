@@ -1,0 +1,9 @@
+@import "../variables";
+
+.app-logo {
+  width: 38rem;
+  height: $header-height;
+  cursor: pointer;
+  background-image: url("../images/logo.png");
+  display: inline-block;
+}

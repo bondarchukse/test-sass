@@ -1,0 +1,30 @@
+@import "../fonts";
+@import "../mixins";
+
+.app-avatar {
+  text-align: center;
+
+  &__image {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    @extend %font-title;
+    @include active-color(color, $color-text);
+    cursor: pointer;
+
+    &:after {
+      content: "";
+      display: inline-block;
+      vertical-align: baseline;
+      margin-left: 1rem;
+      @include triangle();
+    }
+  }
+
+  &__text {
+
+  }
+
+}

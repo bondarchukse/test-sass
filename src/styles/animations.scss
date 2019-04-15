@@ -1,0 +1,14 @@
+
+@keyframes rotate-item {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+%animation-rotate {
+  animation: 0.75s ease 0s rotate-item;
+}

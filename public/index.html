@@ -4,53 +4,102 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="theme-color" content="#000000">
-  <!--
-    manifest.json provides metadata used when your web app is added to the
-    homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
-  -->
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-  <!--
-    Notice the use of %PUBLIC_URL% in the tags above.
-    It will be replaced with the URL of the `public` folder during the build.
-    Only files inside the `public` folder can be referenced from the HTML.
 
-    Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-    work correctly both with client-side routing and a non-root public URL.
-    Learn how to configure a non-root public URL by running `npm run build`.
-  -->
-  <title>React App</title>
-  
+  <link rel="manifest" href="manifest.json">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto:300" rel="stylesheet">
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="fontello/css/fontello.css" />
+
+  <title>Cadent Front-end - Style Aptitude Test</title>
+
 </head>
 <body>
-  <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="index.css" />
-    <title>Cadent Front-end - Style Aptitude Test</title>
-  </head>
-  <body>
-    <section class="app">
-      <header>Header</header>
-      <aside>Aside</aside>
-      <section>Content</section>
-      <footer>Footer</footer>
+<section class="app">
+  <header class="app__header">
+    <!-- logo -->
+    <a href="/" title="Smart Home" class="app-logo"></a>
+
+    <!-- menu button -->
+    <div class="app-menu-button" role="button">
+      <div class="app-menu-button__bar"></div>
+      <div class="app-menu-button__bar"></div>
+      <div class="app-menu-button__bar"></div>
+    </div>
+  </header>
+
+  <section class="app__container">
+    <aside class="app__aside">
+      <!-- avatar -->
+      <div class="app-avatar">
+        <img src="images/avatar.png" class="app-avatar__image" alt="My Home">
+        <div class="app-avatar__title">
+          My Home
+        </div>
+        <div class="app-avatar__text">
+          9898 Trent Bypass Suite 541
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="app-menu">
+        <ul class="app-menu__container">
+          <li class="app-menu__item-container">
+            <a class="app-menu__item">
+              <i class="app-menu__icon icon-home"></i>
+              Overview
+            </a>
+          </li>
+
+          <li class="app-menu__item-container">
+            <a class="app-menu__item">
+              <i class="app-menu__icon icon-tablet"></i>
+              Devices
+            </a>
+          </li>
+
+          <li class="app-menu__item-container">
+            <a class="app-menu__item">
+              <i class="app-menu__icon icon-chart-line"></i>
+              Analytics
+            </a>
+          </li>
+
+          <li class="app-menu__item-container">
+            <a class="app-menu__item">
+              <i class="app-menu__icon icon-list"></i>
+              Rules
+            </a>
+          </li>
+
+          <li class="app-menu__item-container">
+            <a class="app-menu__item">
+              <i class="app-menu__icon icon-tablet"></i>
+              Gallery
+            </a>
+          </li>
+
+          <li class="app-menu__item-container">
+            <a class="app-menu__item">
+              <i class="app-menu__icon icon-back-in-time"></i>
+              History
+            </a>
+          </li>
+
+          <li class="app-menu__item-container">
+            <a class="app-menu__item">
+              <i class="app-menu__icon icon-cog-outline"></i>
+              Settings
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </aside>
+    <section class="app__content">
+      Site content will be here.
     </section>
-  </body>
-</html>
-
-  <!--
-    This HTML file is a template.
-    If you open it directly in the browser, you will see an empty page.
-
-    You can add webfonts, meta tags, or analytics to this file.
-    The build step will place the bundled scripts into the <body> tag.
-
-    To begin the development, run `npm start` or `yarn start`.
-    To create a production bundle, use `npm run build` or `yarn build`.
-  -->
+  </section>
+</section>
 </body>
 </html>

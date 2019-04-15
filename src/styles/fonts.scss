@@ -1,0 +1,15 @@
+@import "variables";
+
+%font-family {
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+}
+
+%font-title {
+  font-size: $font-size-title;
+  line-height: 1.2;
+}
+
+%font-text {
+  font-size: $font-size-base;
+  line-height: 1.4;
+}
